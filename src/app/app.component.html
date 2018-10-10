@@ -1,4 +1,11 @@
 <mat-toolbar>My App</mat-toolbar>
-
+<div >
+<mat-grid-list cols="6" rowHeight="4:4" gutterSize="10">
+    <mat-grid-tile [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</mat-grid-tile>
+    <mat-grid-tile [routerLink]="['/about']" routerLinkActive="router-link-active" >About</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
+</div>
 
 <router-outlet></router-outlet>
