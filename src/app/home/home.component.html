@@ -1,3 +1,21 @@
-<p>
-  home works!
-</p>
+
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput #message maxlength="256" placeholder="Message" >
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+  </mat-form-field>
+</form>
+<div class="button-row">
+  <button mat-raised-button color="primary" type="submit" (click)="addMessage()">Send </button>
+</div>
+<p>{{ count }}</p>
+
+
+<div class="conteiner">
+    <mat-list *ngFor="let mgs of messages">{{mgs}}
+      <mat-list-item>Item 1</mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+  </div>
+
